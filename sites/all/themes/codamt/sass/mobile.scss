@@ -1,0 +1,24 @@
+@import "zen";
+@import "compass";
+
+$zen-gutter-width: 40px;
+$zen-column-count: 12;
+
+ #page{
+   @include zen-grid-container;
+   max-width:320px;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+#mini-panel-content_first_first {
+  @include zen-grid-container;
+  .field-name-body {
+   @include zen-grid-item(6, 1);
+}
+
+.field-name-field-images{
+   @include zen-grid-item(6, 7);
+   }
+
+}

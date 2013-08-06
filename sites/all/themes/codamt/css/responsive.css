@@ -1,0 +1,161 @@
+/* line 8, ../sass/responsive.scss */
+#page {
+  max-width: 64% !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#page:before, #page:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#page:after {
+  clear: both;
+}
+
+/* line 15, ../sass/responsive.scss */
+#header {
+  max-width: 100%;
+  background: url("/codam/sites/default/files/header_ipad.png");
+}
+
+/* line 20, ../sass/responsive.scss */
+.pane-content-first-first {
+  background: url("/codam/sites/default/files/cbg_ipad.png");
+  background-repeat: no-repeat;
+}
+
+/* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#mini-panel-content_first_first:before, #mini-panel-content_first_first:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#mini-panel-content_first_first:after {
+  clear: both;
+}
+/* line 27, ../sass/responsive.scss */
+#mini-panel-content_first_first .field-name-body {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 31, ../sass/responsive.scss */
+#mini-panel-content_first_first .field-name-field-images {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 37, ../sass/responsive.scss */
+.profit {
+  font-size: 3em !important;
+  line-height: 2em !important;
+}
+
+/* line 42, ../sass/responsive.scss */
+hr {
+  width: 22%;
+}
+
+/* line 45, ../sass/responsive.scss */
+.solutions {
+  float: right;
+  position: relative;
+  top: -77px;
+  left: 78px !important;
+  color: #d7d7d7;
+  font-size: 0.75em;
+  width: 101%;
+}
+
+/* line 55, ../sass/responsive.scss */
+.quote {
+  float: left;
+  position: relative;
+  top: -77px;
+  left: 22% !important;
+}
+
+/* line 62, ../sass/responsive.scss */
+#mini-panel-services_ h2 {
+  font-size: 1.7em !important;
+}
+
+/* line 65, ../sass/responsive.scss */
+.code, .despng, .mpng {
+  padding: 0 60px 0 60px !important;
+}
+
+/* line 68, ../sass/responsive.scss */
+.clients img {
+  max-width: 13% !important;
+}
+
+/* line 72, ../sass/responsive.scss */
+.pane-our-work #mini-panel-portfolio .field-name-body {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 76, ../sass/responsive.scss */
+.pane-our-work .port {
+  width: 728px !important;
+  padding: 0;
+}
+
+/* line 80, ../sass/responsive.scss */
+.port1, .port2, .port3 {
+  width: 238px !important;
+  padding: 0 !important;
+}
+
+/* line 84, ../sass/responsive.scss */
+.port1 img, .port2 img, .port3 img {
+  max-width: 100% !important;
+}
+
+/* line 88, ../sass/responsive.scss */
+.pane-our-work .pane-title {
+  font-size: 1.2em !important;
+}
+
+/* line 94, ../sass/responsive.scss */
+input[type="email"], input[type="text"] {
+  width: 288px !important;
+}
+
+/* line 99, ../sass/responsive.scss */
+#footer .block-webform h2 {
+  margin: 0 19.5px !important;
+}
+/* line 102, ../sass/responsive.scss */
+#footer p {
+  font-size: 1em !important;
+}

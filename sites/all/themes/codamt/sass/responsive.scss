@@ -1,0 +1,105 @@
+@import "zen";
+@import "compass";
+
+$zen-gutter-width: 40px;
+$zen-column-count: 12;
+
+
+  #page{
+   @include zen-grid-container;
+   max-width:64% !important;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+#header{
+  max-width:100%;
+    background:url("/codam/sites/default/files/header_ipad.png");
+}
+
+.pane-content-first-first{
+   background: url("/codam/sites/default/files/cbg_ipad.png");
+   background-repeat: no-repeat;
+}
+
+#mini-panel-content_first_first {
+  @include zen-grid-container;
+  .field-name-body {
+   @include zen-grid-item(6, 1);
+}
+
+.field-name-field-images{
+   @include zen-grid-item(6, 7);
+   }
+
+}
+
+.profit{
+  font-size: 3em !important;
+  line-height: 2em !important;
+}
+
+hr{
+  width:22%;
+}
+.solutions{
+float: right;
+position: relative;
+top: -77px;
+left: 78px !important;
+color: #d7d7d7;
+font-size: 0.75em;
+width:101%;
+}
+
+.quote {
+float: left;
+position: relative;
+top: -77px;
+left: 22% !important;
+}
+
+#mini-panel-services_ h2{
+  font-size: 1.7em !important;
+}
+.code, .despng, .mpng{
+  padding: 0 60px 0 60px !important;
+}
+.clients img{
+  max-width: 13% !important;
+}
+
+.pane-our-work #mini-panel-portfolio .field-name-body{
+ @include zen-grid-item(12, 1);
+}
+
+.pane-our-work .port{
+  width: 728px !important;
+  padding:0;
+}
+.port1, .port2, .port3{
+  width:238px !important;
+  padding: 0 !important;
+}
+.port1 img, .port2 img, .port3 img{
+max-width: 100% !important;
+
+}
+.pane-our-work .pane-title {
+font-size: 1.2em !important;
+}
+
+
+//Footer
+input[type="email"], input[type="text"] {
+width: 288px !important;
+}
+
+#footer{
+ .block-webform h2{
+    margin: 0 19.5px !important;
+}
+p {
+  font-size: 1em !important;
+}
+}

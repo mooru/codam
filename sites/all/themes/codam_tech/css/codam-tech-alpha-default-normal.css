@@ -1,0 +1,246 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+ /* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+
+/* Header */
+#page{
+
+}
+
+#main{
+  margin-top: -80px;
+}
+
+#content{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.pane-content-first-first{
+   padding: 0 120px;
+   background: url("/codam/sites/default/files/bg.png");
+   background-repeat: no-repeat;
+}
+
+/* #content_first .panel-panel{
+  display:inline-block; */
+
+/* padding-top: 20px; */
+
+#mini-panel-content_first_first .panel-panel{
+  display: inline-block;
+}
+
+.profit{
+  margin-top: 1em;
+color:#fff;
+  font-size: 5.66em;
+}
+
+#mini-panel-services_ .panel-panel{
+  padding-top: 20px;
+}
+
+#mini-panel-services_ .panel-panel:nth-child(1){
+  display:inline-block;
+  margin-right: 10px;
+  width: 328px;
+}
+
+#mini-panel-services_ .panel-panel:nth-child(2){
+  display:inline-block;
+  margin-left: 7px;
+  width: 328px;
+}
+
+#mini-panel-services_ .panel-panel:nth-child(3){
+  display:inline-block;
+  margin-left: 12px;
+  width: 328px;
+}
+
+.pane-combo,
+.pane-our-work{
+  margin-top: -24px;
+  padding: 0 120px;
+  background: url("/codam/sites/default/files/cbg.png");
+}
+
+.pane-our-work h2{
+  position: relative;
+  margin: auto;
+  padding: 46px 0 46px 0;
+  width: 134px;
+  background: url("/codam/sites/default/files/ecliipse.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#mini-panel-content_first_first,
+#mini-panel-who_and_what_,
+#mini-panel-services_{
+/* /*/*padding: 0 120px 0 120px; */*/*/
+;
+
+}
+
+#mini-panel-services_ .pane-title{
+  color:#684828;
+  text-align: center;
+  font-size: 2em;
+  line-height: 0;
+}
+
+.despng, .code, .mpng {
+margin-top: -8px;
+text-align: center;
+}
+
+#mini-panel-who_and_what_ .pane-title{
+
+  margin-bottom: -1em;
+    color:#3e5e6b;
+  text-align: center;
+}
+
+#footer {
+  height:742px;
+  background: url("/codam/sites/default/files/fbg.png");
+}
+
+ select, input[type="date"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="email"], input[type="month"],
+input[type="number"], input[type="password"],
+input[type="search"],
+input[type="tel"], input[type="text"], input[type="time"],
+input[type="url"], input[type="week"] {
+  width:100%;
+  height:30px;
+  background-color: #F2F2F0;
+}
+
+.webform-client-form{
+  padding:0 25% 0 25%;
+}
+
+
+input:focus, textarea:focus{
+  background-color:#c5e9f8;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+}
+
+
+textarea{
+   min-height:10em;
+  width:100%;
+   background-color: #F2F2F0;
+}
+
+label{
+  color:#fdfdfd;
+}
+
+.des, .dev, .mobile,
+#mini-panel-who_and_what_ p{
+  text-align: justify;
+}
+
+
+.solutions{
+  color: #fff;
+  font-size: 1em;
+}
+
+hr{
+  display: inline-block;
+  margin: 6px 0;
+  width: 145px;
+  height: 0;
+  color: #3E5E6B;
+}
+
+.pane-recipe{
+     margin-top: -9px;
+     padding: 0 70px 0 70px;
+     height: 320px;
+     background: url("/codam/sites/default/files/bg.png");
+   background-repeat: no-repeat;
+}
+#mini-panel-recipe .pane-node{
+  display: inline-block;
+  width: 24%;
+}
+
+#mini-panel-recipe .panel-separator {
+display: inline-block;
+}
+
+#mini-panel-recipe .pane-title{
+  color:#fff;
+}
+
+
+.port {
+
+}
+
+.port1, .port2, .port3{
+  display: inline-block;
+  width: 329px;
+}
+
+.port2{
+  margin-left:10px;
+}
+
+.port3{
+  margin-left: 10px;
+}
+.port1:hover, .port2:hover, .port3:hover{
+  opacity:0.3;
+}
+
+#mini-panel-who_and_what_ .panel-col-first{
+  margin-right: 10px;
+  width:500px;
+}
+
+#mini-panel-who_and_what_ .panel-col-last{
+  width: 500px;
+}
+#mini-panel-who_and_what_ .panel-col-first{
+  margin-right: 10px;
+  width:500px;
+}
+
+#mini-panel-who_and_what_ .panel-col-last{
+  width: 500px;
+}
+
+
+

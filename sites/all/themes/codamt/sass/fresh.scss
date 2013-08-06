@@ -1,0 +1,467 @@
+@import "compass";
+@import "zen";
+@import "sassy-buttons";
+
+
+ $zen-gutter-width: 80px;
+ $zen-column-count: 12;
+
+ $hw: 135px;
+
+ //colors
+ $white:#fff;
+ $color: #3E5E6B;
+ $color1:#684828;
+ $color2:#c5e9f8;
+ $hr:#D8D8D1;
+ $taj:justify;
+ $pos:relative;
+ $left:165px;
+ $top:-100px;
+
+
+#page{
+   @include zen-grid-container;
+   max-width:100%;
+}
+
+#main{
+  padding-top: 6.47em;
+}
+
+#content{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#logo{
+  padding:13px 0;
+     @include zen-grid-item(3, 2);
+}
+
+
+#site-name{
+margin: 0;
+font-size: 2em;
+line-height: 1.5em;
+position: relative;
+left: 145%;
+top:11px;
+a:hover{
+       text-decoration:none;
+}
+}
+
+#name-and-slogan{
+  padding-top: 53px;
+}
+
+//Header Background
+
+#header{
+   @include zen-grid-container;
+  background:url("/codam/sites/default/files/header.png");
+  height:$hw;
+  max-width:100%;
+  a{
+    padding: 24px 0;
+  }
+}
+
+.pane-content-first-first{
+   background: url("/codam/sites/default/files/bg.png");
+   background-repeat: no-repeat;
+}
+
+//Top Content Region
+#mini-panel-content_first_first {
+ padding-top: 50px;
+ margin-top:-114px;
+  @include zen-grid-container;
+  .field-name-body {
+   @include zen-grid-item(6, 1);
+}
+
+.field-name-field-images{
+   @include zen-grid-item(6, 7);
+   }
+
+}
+
+//Top Context Text Styles
+.profit{
+ float:right;
+  margin-top: 0;
+  color:$white;
+  font-size: 6em;
+  line-height: 129px;
+}
+
+.solutions{
+float: right;
+position: relative;
+top: -120px;
+left: -135px;
+color: #d7d7d7;
+}
+
+//About Us Styles
+#mini-panel-who_and_what_{
+  @include zen-grid-container;
+  h2{
+    text-align:center;
+    color:$color;
+  }
+  .panel-col-first{
+      @include zen-grid-item(6, 1);
+      text-align:$taj;
+  }
+  .panel-col-last{
+      @include zen-grid-item(6, 7);
+      text-align:$taj;
+  }
+}
+
+//Horizontal Lines Styles
+hr{
+  display: inline-block;
+  margin: 6px 0;
+  width: 28%;
+  height: 0.2em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: $color;
+}
+
+
+//Services Region
+#mini-panel-services_{
+ @include zen-grid-container;
+   text-align:justify;
+  h2{
+    text-align: center;
+    color:$color1;
+    font-size: 1.9em;
+  }
+  .pane-content{
+    margin-top:-30px;
+  }
+.panel-col-first{
+   @include zen-grid-item(4, 1);
+   }
+   .panel-col{
+     @include zen-grid-item(4, 5);
+   }
+   .panel-col-last{
+      @include zen-grid-item(4, 9);
+   }
+ }
+
+
+.code, .despng, .mpng{
+  padding: 0 144.5px;
+}
+
+//Recipe Styles
+#mini-panel-recipe {
+h2{
+    color:$white;
+    text-align: center;
+  }
+  @extend .pane-content-first-first;
+  margin-top: -10px;
+  padding-top: 15px;
+
+  .panel-pane:nth-child(1){
+     @include zen-grid-item(3, 1);
+     img[src$=png]{
+    padding:0 65px;
+  }
+  }
+  .panel-pane:nth-child(2){
+     @include zen-grid-item(3, 4);
+
+        img[src$=png]{
+    padding:0 85px;
+  }
+  }
+  .panel-pane:nth-child(3){
+     @include zen-grid-item(3, 7);
+        img[src$=png]{
+    padding:0 95.5px;
+  }
+  }
+  .panel-pane:nth-child(4){
+     @include zen-grid-item(3, 10);
+        img[src$=png]{
+    padding:0 57.5px;
+  }
+  }
+}
+
+#mini-panel-combo{
+   background: url("/codam/sites/default/files/cbg.png");
+}
+
+//Sample Work Styles
+.pane-our-work{
+    @include zen-grid-container;
+    @extend #mini-panel-combo;
+    padding-top:50px;
+.foot{
+  @include zen-grid-item(5, 1);
+  position: relative;
+  left: 39px;
+  top: 17px;
+   border-color: $hr;
+}
+.foo{
+  @include zen-grid-item(5, 9);
+   position: relative;
+   left: -145px;
+   top: 17px;
+    border-color: $hr;
+}
+  h2{
+    @include zen-grid-item(2, 6);
+    text-align:center;
+    margin-top:-80px;
+    color:$color1;
+    background: url("/codam/sites/default/files/ecllipse.png");
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    height:174px;
+    padding:81px 34px 43px;
+  }
+  #mini-panel-portfolio .field-name-body {
+    @include zen-grid-item(10, 2);
+
+  }
+
+//Portfolio Styles
+  .port{
+     padding: 0 77.5px;
+     width:832px;
+     margin-top: 120px;
+  }
+  .port1, .port2, .port3{
+      display: inline-block;
+  }
+}
+
+.port1 img:hover{
+  @include rotate(360deg);
+  @include single-transition(transform, 5s, linear);
+}
+
+.port2 img:hover{
+   @include rotate(360deg);
+  @include single-transition(transform, 5s, linear);
+  }
+
+  .port3 img:hover{
+  @include rotate(360deg);
+  @include single-transition(transform, 5s, linear);
+  }
+
+
+//Footer Region Styles
+#footer{
+    @include zen-grid-container;
+  background:url("/codam/sites/default/files/fbg.png");
+  p{
+    text-align:center;
+    font-size:1.2em;
+    color:$white;
+  }
+.block-webform{
+  h2{
+    text-align:center;
+    color:#f4f4f4;
+    font-size:2em;
+    margin: 0 143.5px;
+    width: 255px;
+    background-color: #6F6F6B;;
+}
+   @include zen-grid-item(6, 4);
+}
+}
+textarea{
+  min-height:10em;
+  max-width:100%;
+   background-color: #F2F2F0;
+}
+label{
+  color:#fdfdfd;
+}
+
+input[type="email"], input[type="text"] {
+  width:542px;
+  height:30px;
+  background-color: #F2F2F0;
+}
+input:focus, textarea:focus{
+@include single-transition(background, 0.2s, ease-in, 1s);
+  background-color:$color2;
+}
+.form-item .form-required{
+  color:$color2;
+}
+
+//Recipe Arrow Styles
+.arrow{
+position: $pos;
+left: $left;
+top: $top + 30;
+}
+.arrow1{
+position: $pos;
+left: $left - 20;
+top: $top;
+}
+.arrow2{
+position: $pos;
+left: $left - 40;
+top: $top;
+}
+.progs, .mobb{
+  background-color: rgba(170, 165, 165, 0.1);
+}
+
+//Client Images Styles
+ .clients{
+ @include zen-grid-item(12, 1);
+ margin-top:40px;
+ margin-bottom: 50px;
+  img{
+   padding: 0 21px;
+ }
+}
+
+ #mini-panel-portfolio {
+margin-bottom: 80px;
+}
+
+.pane-who-and-what p{
+  margin-top: -1.5em;
+}
+
+//Placeholder Styles
+::-webkit-input-placeholder {
+   color: rgba(171, 169, 169, 0.6);
+   font-style:italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(171, 169, 169, 0.6);
+     font-style:italic;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(171, 169, 169, 0.6);
+     font-style:italic;
+}
+:-ms-input-placeholder {
+   color: rgba(171, 169, 169, 0.6);
+     font-style:italic;
+}
+
+
+#mini-panel-recipe{
+  .for{
+  @include zen-grid-item(4, 1);
+  position: relative;
+  left: 110px;
+  top: 39px;
+   border-color: rgba(255, 255, 255, 0.2);
+}
+ .crep{
+    @include zen-grid-item(4, 5);
+  }
+.fox{
+  @include zen-grid-item(4, 9);
+   position: relative;
+   left: -114px;
+   top: 39px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+  .panel-col{
+    padding-top: 30px;
+  }
+  .rep{
+margin-bottom: 35px;
+}
+}
+
+.resizable-textarea .grippie{
+  background-color: #4d4c4c;
+  border: none;
+}
+
+.quote {
+float: right;
+position: relative;
+top: -30px;
+left:34px;
+@include sassy-button("matte", 5px, 19px, #fce6cf, #f9ab5a,  #333, "inset");
+}
+
+.form-submit{
+  @include sassy-button("matte", 5px, 19px, #fce6cf, #f9ab5a,  #333, "inset");
+  padding: 0.3em 1.5em !important;
+}
+
+// .pane-our-work h2{
+//   animation: blink 2s ease-in-out 2s infinite;
+//   -moz-animation: blink 4s ease -in-out 2s infinite;
+// }
+
+// @keyframes blink{
+//    0%{opacity:0.1;}
+//   15%{opacity:0.25;}
+//   30%{opacity:0.5;}
+//   45%{opacity:0.75;}
+//   60%{opacity:1;}
+//   75%{opacity:0.75;}
+//   90%{opacity:0.5;}
+//   95%{opacity:0.25;}
+//   100%{opacity:0.1;}
+
+// }
+// @-moz-keyframes blink{
+//   0%{opacity:0.1;}
+//   15%{opacity:0.25;}
+//   30%{opacity:0.5;}
+//   45%{opacity:0.75;}
+//   60%{opacity:1;}
+//   75%{opacity:0.75;}
+//   90%{opacity:0.5;}
+//   95%{opacity:0.25;}
+//   100%{opacity:0.1;}
+// }
+// .pane-our-work h2{
+// animation: roll 2s linear 2s infinite;
+// -webkit-animation: roll 2s linear 2s infinite;
+//       -moz-animation: roll 2s linear 2s infinite;
+// }
+
+// @-webkit-keyframes roll{
+//   from{transform:rotate(0deg);}
+//   to{transform:rotate(360deg);}
+// }
+// @-moz-keyframes roll{
+//   from{transform:rotate(0deg);}
+//   to{transform:rotate(360deg);}
+// }
+// @keyframes roll{
+//   from{transform:rotate(0deg);}
+//   to{transform:rotate(360deg);}
+// }
+
+// .hint img:hover{
+//   transform:rotateY(20deg);
+//   transition: transform linear 5s;
+//    -webkit-transform:rotateX(20deg);
+//   -webkit-transition: transform linear 5s;
+//    -moz-transform:rotateX(20deg);
+//   -moz-transition: transform linear 5s;
+// }

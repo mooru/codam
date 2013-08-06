@@ -1,0 +1,106 @@
+@import "zen";
+@import "compass";
+
+$zen-gutter-width: 40px;
+$zen-column-count: 12;
+
+  #page{
+   @include zen-grid-container;
+   max-width:85.4%;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.profit{
+  font-size: 4.50406901em;
+}
+
+.solutions{
+  position: relative;
+  left:4px;
+}
+//Recipe
+#mini-panel-recipe{
+ .panel-pane:nth-child(1){
+     @include zen-grid-item(3, 1);
+     img[src$=png]{
+    padding:0 65px;
+    max-width:40%;
+  }
+  }
+  .panel-pane:nth-child(2){
+     @include zen-grid-item(3, 4);
+        img[src$=png]{
+    padding:0 85px;
+    max-width: 26%;
+  }
+  }
+  .panel-pane:nth-child(3){
+     @include zen-grid-item(3, 7);
+        img[src$=png]{
+    padding:0 95.5px;
+    max-width: 18%;
+  }
+  }
+  .panel-pane:nth-child(4){
+     @include zen-grid-item(3, 10);
+        img[src$=png]{
+    padding:0 57.5px;
+    max-width: 40%;
+
+  }
+}
+}
+
+
+
+
+//Portfolio
+.clients img{
+  max-width: 15%;
+}
+
+.code, .despng, .mpng{
+  padding: 0 103px;
+}
+
+.pane-our-work #mini-panel-portfolio .field-name-body{
+ @include zen-grid-item(12, 1);
+}
+
+.pane-our-work .port {
+width: 832px;
+margin-top: 120px;
+}
+.port1, .port2, .port3{
+  width:273px;
+}
+.port1 img, .port2 img, .port3 img{
+max-width: 100%;
+
+}
+
+
+
+//Footer
+input[type="email"], input[type="text"] {
+width: 416px;
+}
+
+.block-webform{
+  h2{
+    margin: 0 83.5px !important;
+}
+}
+
+.pane-our-work{
+  .foo{
+    left:-104px;
+  }
+  .foot{
+    left:19px;
+  }
+  .pane-title{
+    font-size: 1.4em;
+  }
+}
