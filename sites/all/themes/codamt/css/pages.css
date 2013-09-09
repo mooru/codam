@@ -67,6 +67,7 @@ body {
 #site-name a:link,
 #site-name a:visited {
   color: #000;
+  font-size: 2em;
   text-decoration: none;
 }
 /* line 78, ../sass/pages.scss */

@@ -46,13 +46,18 @@
 
 /* line 43, ../sass/fresh.scss */
 #site-name {
+  color: #222;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.5em;
   position: relative;
-  left: 145%;
-  top: 11px;
+  left: 64%;
 }
+
+#site-name a{
+  color: #3B5761 !important;
+}
+
 /* line 50, ../sass/fresh.scss */
 #site-name a:hover {
   text-decoration: none;
@@ -67,9 +72,10 @@
 #header {
   *position: relative;
   *zoom: 1;
-  background: url("/codam/sites/default/files/header.png");
+  /* background: url("/codam/sites/default/files/header.png"); */
   height: 135px;
   max-width: 100%;
+  background-color: #EEF0F0;
 }
 /* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:before, #header:after {
@@ -314,6 +320,7 @@ hr {
 #mini-panel-recipe {
   margin-top: -10px;
   padding-top: 15px;
+  height: 374px;
 }
 /* line 168, ../sass/fresh.scss */
 #mini-panel-recipe h2 {
@@ -340,6 +347,8 @@ hr {
 /* line 178, ../sass/fresh.scss */
 #mini-panel-recipe .panel-pane:nth-child(1) img[src$=png] {
   padding: 0 65px;
+  -webkit-transition: 30px 40px;
+  /* -webkit-transform: translateX(8px); */
 }
 /* line 182, ../sass/fresh.scss */
 #mini-panel-recipe .panel-pane:nth-child(2) {
@@ -645,7 +654,8 @@ input:focus, textarea:focus {
 .arrow {
   position: relative;
   left: 165px;
-  top: -70px;
+  top: -60px;
+  /* -webkit-transform: translateX(120px); */
 }
 
 /* line 318, ../sass/fresh.scss */
@@ -923,3 +933,4 @@ input:focus, textarea:focus {
   padding: 0 !important;
   margin: -1px !important;
 }
+
